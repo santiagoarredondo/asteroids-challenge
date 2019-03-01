@@ -1,0 +1,25 @@
+﻿body {
+    text-align:center;
+    align-content:center;
+}
+
+th {
+    background-color: darkslategray;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
+    width: 90%;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}

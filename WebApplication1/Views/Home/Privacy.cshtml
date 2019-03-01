@@ -1,0 +1,51 @@
+﻿
+@model IEnumerable<ClassLibrary1.Class1.DateInformation>
+    @{
+    ViewData["Title"] = "Asteroids Challenge";
+    }
+
+    <link href="~/css/table.css" rel="stylesheet" type="text/css"/>        
+
+    <h1>@ViewData["Title"]</h1>
+
+    <p> This page shows the near asteroids.</p>
+
+    <div>
+        <form asp-action="Privacy" method="post">
+            Enter the start date:
+            <input name="startDate" type="date"><br>
+            Enter the end date:
+            <input name="endDate" type="date"><br>
+            <button name="button" type="submit"> Update </button>
+        </form>
+        <u>
+            
+        </u>
+    </div>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Absolute magnitude</th>
+            <th>Is potentially hazardous</th>
+            <th>Is centry object</th>
+            <th>Distance</th>
+            <th>Time to get speed of light</th>
+        </tr>
+            @foreach (var dateInfo in Model)
+            {
+        <tr>
+            <td>@dateInfo.id.ToString()</td>
+            <td>@dateInfo.close_approach_data[0].close_approach_date.ToString()</td>
+            <td>@dateInfo.name.ToString()</td>
+            <td>@dateInfo.absolute_magnitude_h.ToString()</td>
+            <td>@dateInfo.is_potentially_hazardous_asteroid.ToString()</td>
+            <td>@dateInfo.is_sentry_object.ToString()</td>
+            <td>@dateInfo.close_approach_data[0].miss_distance.kilometers Km</td>
+            <td>@(ClassLibrary1.Class1.getTimeToSppedOfLight(float.Parse(dateInfo.close_approach_data[0].miss_distance.kilometers))) m</td>
+        </tr>
+            }
+
+    </table>
