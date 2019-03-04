@@ -14,7 +14,6 @@ C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netco
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.TagHelpers.output.cache
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorCoreGenerate.cache
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -30,3 +29,4 @@ C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netco
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\ClassLibrary1.dll
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\ClassLibrary1.pdb
 C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+C:\Users\sarredondo\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Challenge.g.cshtml.cs
