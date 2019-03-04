@@ -22,14 +22,20 @@ namespace WebApplication1.Controllers
         public IActionResult Challenge(DateTime startDate, DateTime endDate)
         {
             DateTime defaultDate = new DateTime();
-            if (startDate.Equals(defaultDate)&&endDate.Equals(defaultDate)){
+            if (startDate.Equals(defaultDate) && endDate.Equals(defaultDate))
+            {
                 startDate = Utils.getDefaultDate();
                 endDate = startDate;
-            }else if (startDate.Equals(defaultDate)){
+            }
+            else if (startDate.Equals(defaultDate))
+            {
                 startDate = endDate;
-            }else {
+            }
+            else if (endDate.Equals(defaultDate))
+            {
                 endDate = startDate;
             }
+            else {; }
             
             Console.WriteLine();
             string link = @"https://api.nasa.gov/neo/rest/v1/feed?start_date=" + startDate.ToString("yyyy-MM-dd") + @"&end_date=" + endDate.ToString("yyyy-MM-dd") + @"&api_key=pJiODzcpV9OaqN1Hhci1YT8m7wDqo36HzwwyeXsa";
