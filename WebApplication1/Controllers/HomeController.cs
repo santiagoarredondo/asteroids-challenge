@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Privacy(DateTime startDate, DateTime endDate)
+        public IActionResult Challenge(DateTime startDate, DateTime endDate)
         {
             DateTime defaultDate = new DateTime();
             if (startDate.Equals(defaultDate)&&endDate.Equals(defaultDate)){
@@ -52,7 +52,7 @@ namespace WebApplication1.Controllers
         }
         
         [HttpGet]
-        public IActionResult Privacy()
+        public IActionResult Challenge()
         {
             //string link = @"https://api.nasa.gov/neo/rest/v1/feed?start_date=" + Utils.DateToString(startDate) + @"&end_date=" + Utils.DateToString(endDate) + @"&api_key=aqSXasG5NLdhh7TBbIeKXJT3VhrkNwD3PSJDrMba";
             string link = Utils.link;
